@@ -1,0 +1,123 @@
+/* Сброс стилей и базовые настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    background-color: #f7f7f7; /* Светлый фон */
+    color: #333;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Стиль для заголовка */
+header {
+    background-image: url('header-bg.jpg'); /* Картинка в фоне для заголовка */
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-out;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: slideUp 1s ease-out;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Анимация для заголовка */
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Стиль для секций */
+section {
+    padding: 60px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-out;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 12px 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+#about img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Стили для контактных ссылок */
+#contact a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid #2575fc;
+    padding-bottom: 2px;
+}
+
+#contact a:hover {
+    color: #333;
+    border-color: #333;
+}
+
+/* Стиль футера */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 30px;
+}
